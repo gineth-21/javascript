@@ -1,5 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    min-height: 200vh;
+    overflow-x: hidden;
 }
+
+.scene {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sky {
+    width: 100%;
+    height: 100%;
+    background-color: #87CEEB;
+    position: relative;
+}
+
+.camino {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #8B4513;
+}
+
+.caperucita {
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    transform: translateX(-50%);
+}
+
+.flor-centro {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.petalo {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #FF0000;
+    border-radius: 50%;
+}
+
+.petalo-1 { top: 0; left: 50%; transform: translateX(-50%); }
+.petalo-2 { right: 0; top: 50%; transform: translateY(-50%); }
+.petalo-3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+.petalo-4 { left: 0; top: 50%; transform: translateY(-50%); }
