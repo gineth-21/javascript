@@ -58,19 +58,63 @@ body {
     left: 75%;
 }
 
+.arboles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.arbol {
+    position: absolute;
+    bottom: 0;
+}
+
+.arbol-1 { left: 15%; }
+.arbol-2 { left: 35%; }
+.arbol-3 { left: 65%; }
+.arbol-4 { left: 85%; }
+
+.tronco {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    background-color: #654321;
+}
+
+.arbol-1 .tronco { height: 120px; }
+.arbol-2 .tronco { height: 150px; }
+.arbol-3 .tronco { height: 100px; }
+.arbol-4 .tronco { height: 130px; }
+
+.hojas {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background-color: #228B22;
+    border-radius: 50%;
+}
+
 .caperucita {
     position: absolute;
     left: 50px;
     bottom: 120px;
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 .flor-centro {
     position: absolute;
-    width: 35px;
-    height: 35px;
+    width: 55px;
+    height: 55px;
     background-color: #FFD700;
     border-radius: 50%;
     top: 50%;
@@ -81,8 +125,8 @@ body {
 
 .petalo {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 65px;
+    height: 65px;
     background-color: #FF0000;
     border-radius: 50%;
 }

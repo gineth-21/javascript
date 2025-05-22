@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Animación de Caperucita
     gsap.to('.caperucita', {
-        x: window.innerWidth - 200, // Ajustado para el nuevo tamaño
+        x: window.innerWidth - 300, // Ajustado para el nuevo tamaño
         ease: "none",
         scrollTrigger: {
             trigger: "body",
@@ -38,5 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
         repeat: -1,
         yoyo: true,
         ease: "sine.inOut"
+    });
+
+    // Animaciones de los árboles
+    const arboles = document.querySelectorAll('.arbol');
+    arboles.forEach((arbol, index) => {
+        // Animación del tronco
+        gsap.to(arbol, {
+            x: 20,
+            duration: 3 + index * 0.5,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+
+        // Animación de las hojas con movimiento más sutil
+        gsap.to(arbol.querySelector('.hojas'), {
+            rotation: 5,
+            x: 10,
+            duration: 2 + index * 0.3,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
     });
 });
