@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Animación de Caperucita
     gsap.to('.caperucita', {
-        x: window.innerWidth - 150, // Mover hasta casi el final de la pantalla
+        x: window.innerWidth - 200, // Ajustado para el nuevo tamaño
         ease: "none",
         scrollTrigger: {
             trigger: "body",
@@ -13,5 +13,30 @@ document.addEventListener('DOMContentLoaded', () => {
             scrub: 1,
             markers: false
         }
+    });
+
+    // Animaciones de las nubes
+    gsap.to('.nube-1', {
+        x: 100,
+        duration: 15,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+
+    gsap.to('.nube-2', {
+        x: -120,
+        duration: 20,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+
+    gsap.to('.nube-3', {
+        x: 80,
+        duration: 18,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
     });
 });

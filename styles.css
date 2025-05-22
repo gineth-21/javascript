@@ -33,19 +33,44 @@ body {
     background-color: #8B4513;
 }
 
+.nube {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    height: 40px;
+}
+
+.nube-1 {
+    width: 120px;
+    top: 20%;
+    left: 20%;
+}
+
+.nube-2 {
+    width: 180px;
+    top: 15%;
+    left: 50%;
+}
+
+.nube-3 {
+    width: 150px;
+    top: 25%;
+    left: 75%;
+}
+
 .caperucita {
     position: absolute;
     left: 50px;
-    bottom: 100px;
-    width: 60px;
-    height: 60px;
+    bottom: 120px;
+    width: 100px;
+    height: 100px;
     transform: translateX(-50%);
 }
 
 .flor-centro {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     background-color: #FFD700;
     border-radius: 50%;
     top: 50%;
@@ -56,8 +81,8 @@ body {
 
 .petalo {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     background-color: #FF0000;
     border-radius: 50%;
 }
