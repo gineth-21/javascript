@@ -71,9 +71,9 @@ body {
     bottom: 0;
 }
 
-.arbol-1 { left: 15%; }
+.arbol-1 { left: 10%; }
 .arbol-2 { left: 35%; }
-.arbol-3 { left: 65%; }
+.arbol-3 { left: 60%; }
 .arbol-4 { left: 85%; }
 
 .tronco {
@@ -81,22 +81,22 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 30px;
+    width: 60px;
     background-color: #654321;
 }
 
-.arbol-1 .tronco { height: 120px; }
-.arbol-2 .tronco { height: 150px; }
-.arbol-3 .tronco { height: 100px; }
-.arbol-4 .tronco { height: 130px; }
+.arbol-1 .tronco { height: 200px; }
+.arbol-2 .tronco { height: 250px; }
+.arbol-3 .tronco { height: 180px; }
+.arbol-4 .tronco { height: 220px; }
 
 .hojas {
     position: absolute;
-    bottom: 80px;
+    bottom: 150px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     background-color: #228B22;
     border-radius: 50%;
 }
